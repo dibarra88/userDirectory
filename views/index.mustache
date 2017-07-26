@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
+    <h1 id="header">User Directory</h1>
+    <ul id="users">
+        {{#users}}
+        <li>
+            <div>
+            <a href="/user/{{username}}">
+            <img src="{{avatar}}" />
+            <span class="name">{{name}} </span>
+            {{#company}}
+                <span class="position">{{job}} {{.}}</span>
+            {{/company}}
+            {{^company}}
+                <span class="forHire" style="color:red">Available for hire</span>
+            {{/company}}
+            </a>
+            </div>
+        </li>
+        {{/users}}
+    </ul>
+</body>
+
+</html>

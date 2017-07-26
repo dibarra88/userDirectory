@@ -1,0 +1,16 @@
+{
+  "name": "userDirectory",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.15.3",
+    "mustache-express": "^1.2.5"
+  },
+  "scripts": {
+    "start": "nodemon index"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  }
+}
